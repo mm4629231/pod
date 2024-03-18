@@ -1,0 +1,528 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0px;
+}
+
+html{
+    font-size: 10px;
+    font-family: chivo;
+}
+
+body{
+    background-image: url(./mobile/image-host.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    
+}
+
+body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #121725;
+    opacity: 0.9;
+}
+
+
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 62px;
+    margin: auto;
+}
+
+
+
+main .title{
+    position: relative;
+    color: #54e6af;
+    text-align: center;
+    top: 120px;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    line-height: 1.46;
+    font-weight: 100;
+}
+
+
+main .title span{
+    color: #ffffff;
+}
+
+
+main .paragraph1{
+    position: relative;
+    color: #c2cbe5;
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 1.67;
+    width: 340px;
+    height: 100px;
+    font-weight: 100;
+    top: 136px;
+    margin: auto;
+}
+
+
+.group{
+    position: relative;
+    display: flex;
+    /* justify-content: space-around; */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    top: 179px;
+}
+
+
+.group .spotify{
+    width: 55.9px;
+    height: 16.9px;
+}
+
+
+.group .apple{
+    width: 45px;
+    height: 17px;
+}
+
+
+
+.group .podcast{
+    width: 73px;
+    height: 11px;
+    padding-top: 2px;
+}
+
+
+
+.group .pocket{
+    width: 77px;
+    height: 15px;
+}
+
+
+.button{
+    width: 327px;
+    height: 46px;
+    border-radius: 28px;
+    border: none;
+    font-family: chivo;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+
+.buttons{
+    position: relative;
+    top: 227px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.buttons .email{
+    margin-bottom: 10px;
+    text-align: left;
+    box-sizing:border-box;
+    padding-left: 32px;
+    background-color: #2c344b;
+    line-height: 2;
+    color: #999ba2;
+}
+
+
+.buttons .access{
+    background-color: #54e6af;
+}
+
+
+.input{
+    display: flex;
+    flex-direction: column-reverse !important;
+    
+}
+
+.error{
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 32px; */
+}
+
+
+#error{
+    color: #fb3e3e;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    text-align: left;
+    
+}
+
+.reverse{
+    position: unset;
+}
+
+ @media(min-width: 768px){
+
+
+body{
+    background-size: 491px 767px;
+    background-position: right 0;
+    background-color: #121725;
+}
+
+
+
+body::before{
+    content: "";
+    opacity: 0;
+}
+
+
+header{
+    align-items: flex-start;
+    position: unset;
+    margin-top: 50px;
+    margin-left: 39px;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #121725;
+    width: 660px;
+    height: 509px;
+    gap: 40px;
+    margin-top: 152px;
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 93px;
+    padding-left: 39px;
+}
+
+
+main .title{
+   position: unset;
+   font-size: 4.8rem;
+   text-align: left;
+   line-height: 1.17;
+}
+
+
+
+
+main .paragraph1{
+    width: 445px;
+    height: 84px;
+    position: unset;
+    margin: 0px;
+    font-size: 1.8rem;
+    line-height: 1.56;
+    text-align: left;
+}
+
+
+.group{
+    position: unset;
+}
+
+
+.buttons{
+    position: unset;
+    display: flex;
+    flex-direction: row;
+    width: 580px;
+    flex-wrap: wrap;
+    height: 56px;
+    
+}
+
+.buttons .email{
+    margin: 0px;
+    height: 56px;
+    width: 427px;
+}
+
+
+.buttons .access{
+    width: 162px;
+    height: 46px;
+    position: absolute;
+    left: 299px;
+}
+
+
+#error{
+  margin-top: 8px;
+  margin-left: 32px;
+}
+
+
+
+.reverse{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 64px;
+}
+
+
+.group{
+    gap: 40px;
+}
+
+
+.group .spotify{
+    width: 95.9px;
+    height: 28.9px;
+}
+
+
+.group .apple{
+    width: 78px;
+    height: 29px;
+}
+
+
+.group .podcast{
+    width: 125px;
+
+    height: 18px;
+}
+
+
+.group .pocket{
+    width: 129px;
+    height: 26px;
+}
+
+
+footer::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 182px;
+    background-image: url(./desktop/bg-pattern-dots.svg);
+    background-repeat: no-repeat;
+    top: 920px;
+
+}
+
+
+
+}
+
+
+@media(min-width: 1440px){
+
+    body{
+        background-image: url(./desktop/image-host.jpg);
+        background-size: 888px 640px;
+        background-position: right 130px;
+    }
+
+header{
+    margin-top: 102px;
+    margin-left: 165px;
+}
+
+main{
+    width: 888px;
+    height: 509px;
+    gap: 35px;
+    margin-top: 103px;
+    padding-top: 88px;
+    padding-left: 165px;
+}
+
+main .title{
+    font-size: 5.2rem;
+    width: 665px;
+    height: 124px;
+}
+
+.buttons{
+    width: 600px;
+    flex-wrap: wrap;
+    height: 56px;
+}
+
+.buttons .email{
+    cursor: text;
+}
+
+.buttons .access{
+    left: 425px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#error{
+    margin-top: 10px;
+    margin-left: 8px;
+}
+
+footer::before{
+    top: 718px;
+    background-position: right 0;
+}
+
+
+.access:hover{
+    background-color: #b3ffe2;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
